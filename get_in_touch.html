@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get in Touch</title>
+
+  <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      padding: 20px;
+    }
+
+    /* Form card */
+    .contact-card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 480px;
+      padding: 35px 30px;
+      border-radius: 14px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .contact-card h1 {
+      margin-bottom: 8px;
+      color: #333;
+      font-size: 2rem;
+    }
+
+    .contact-card p.subtitle {
+      margin-bottom: 25px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Form elements */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #6a5cff;
+      box-shadow: 0 0 0 3px rgba(106, 92, 255, 0.15);
+    }
+
+    textarea {
+      resize: none;
+      min-height: 110px;
+    }
+
+    /* Submit button */
+    button {
+      margin-top: 10px;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: linear-gradient(135deg, #6a5cff, #4facfe);
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      opacity: 0.95;
+    }
+
+    /* Contact info */
+    .contact-info {
+      margin-top: 22px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .contact-info span {
+      color: #6a5cff;
+      font-weight: 600;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      .contact-card {
+        padding: 25px 20px;
+      }
+
+      .contact-card h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-card">
+    <h1>Get in Touch</h1>
+    <p class="subtitle">We’d love to hear from you. Please fill out the form below.</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="url" placeholder="Your Website" />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-info">
+      Or call us at <span>+91 98765 43210<</span>
+    </div>
+  </div>
+
+</body>
+</html>
